@@ -7,7 +7,6 @@ def limpiar():
     else:
         os.system('clear')
 
-# Diccionario maestro: Organiza todo por (Nombre a mostrar, Comando de ejecución)
 practicas = {
     "1": {
         "titulo": "MENU PRACTICA 1: ARREGLOS",
@@ -75,7 +74,6 @@ def mostrar_sub_menu(num_p):
         p_info = practicas[num_p]
         print(f"--- {p_info['titulo']} ---")
         
-        # Muestra las opciones dinámicamente usando el for
         for opcion, datos in p_info["items"].items():
             print(f"{opcion}. {datos[0]}")
         
