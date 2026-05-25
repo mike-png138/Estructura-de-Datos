@@ -1,2 +1,0 @@
-# Estructura-de-Datos
-Practicas

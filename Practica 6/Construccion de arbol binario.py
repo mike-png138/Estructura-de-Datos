@@ -62,6 +62,14 @@ class armadoArbol:
             else:
                 nodo_actual.hijoDerecho = NodoArbol(clave, clave, padre=nodo_actual)
 
+    def mostrar_estructurado(self, nodo_actual, nivel=0):
+        if nodo_actual is not None:
+            self.mostrar_estructurado(nodo_actual.hijoDerecho, nivel + 1)
+            
+            print("    " * nivel + f"-> {nodo_actual.clave}")
+            
+            self.mostrar_estructurado(nodo_actual.hijoIzquierdo, nivel + 1)
+
     
 
 datos = [3,1,2,4,5]
